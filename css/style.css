@@ -13,21 +13,30 @@
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
 .main-container {
+    display: flex;
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 40px;
     box-sizing: border-box;
+    width: 1340px;
+    height: 614px;
+    flex-direction: row;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1440px;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .section-title {
@@ -62,6 +71,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -74,11 +84,16 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    width: 871px;
+    height: 614px;
+
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    width: 429px;
+    height: 614px;
 }
 
 .populaires-title {
@@ -121,6 +136,314 @@ a {
     margin-bottom: 5px;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hebergements-cards img {
+    width: 250.33px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 5px;
+}
+
+.hebergements-cards .card-content {
+    width: 250.33px;
+    height: 64.25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-items: center;
+    margin-bottom: 8px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 79px;
+    margin-bottom: 30px;
+
+}
+
+.logo {
+    display: flex;
+    width: 161.09px;
+    height: 79px;
+    opacity: 1;
+    gap: 10px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 344px;
+    height: 35px;
+    left: 1096px;
+    gap: 68px;
+    padding-right: 50px;
+    padding-left: 50px;
+    gap: 68px;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+}
+
+.navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.navbar ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0065FC;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.navbar ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+.head-search {
+    width: 1340px;
+    height: 281px;
+    gap: 35px;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    width: 1440;
+}
+
+.head-search h1 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.head-search p {
+    margin-top: 0;
+}
+
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 250.33px;
+    height: 207.25px;
+}
+
+.activites-marseille {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    padding: 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 1340px;
+    height: 559.02px;
+    margin: 40px;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+.marseille-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 1280px;
+    height: 439px;
+    padding: 30px;
+}
+
+.marseille-cards img {
+    width: 297.5px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1340px;
+    height: 163px;
+    background-color: #F2F2F2;
+    padding: 40px;
+}
+
+footer div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.filtres-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 758px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-evenly;
+}
+
+.filtres-container h2 {
+    font-size: 18px;
+}
+
+.recherche-area{
+    display: flex;
+    width: 377px;
+    height: 49px;
+    border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white; 
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.filtres-container .btn {
+    cursor: pointer;
+    width: 173px;
+    height: 50px;
+    gap: 10px;
+    border: 2px;
+    font-weight: bold;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+
+.filtres-container .btn:hover {
+    background-color: #DEEBFF;
+
+}
+
+.recherche-area i {
+    display: flex; 
+    width: 50px; 
+    height: 100%; 
+    border-bottom-left-radius: 15px; 
+    border-top-left-radius: 15px; 
+    background-color: #F2F2F2;
+    align-items: center;
+    justify-content: center;
+}
+
+.recherche-area input {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.recherche-area button {
+    cursor: pointer;
+    height: 100%;
+    gap: 10px;
+    border-width: 1px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.info-ligne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.info-ligne p {
+  margin: 0;
+}
 
 
 
