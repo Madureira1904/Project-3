@@ -919,6 +919,7 @@ footer li {
         background-color: #F2F2F2;
         box-sizing: border-box;
         gap: 15px;
+        height: auto;
     }
 
     footer div {
