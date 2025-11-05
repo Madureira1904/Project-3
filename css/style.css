@@ -469,9 +469,26 @@ footer li {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    header {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+     .navbar {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul {
+        width: auto;
+        gap: 40px;
+    }
+
     .head-search {
         width: 100%;
-        max-width: 924px;
+        max-width: 1024px;
         height: auto;
         gap: 35px;
         margin: 0 auto;
@@ -498,6 +515,8 @@ footer li {
         border-radius: 15px;
         padding: 30px;
         box-sizing: border-box;
+        padding-bottom: 60px;
+        height: 640px
    }
 
     .hebergements-cards {
@@ -531,6 +550,10 @@ footer li {
         border-width: 5px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+
+    .afficher-plus {
+        padding-right: 145px;
     }
 
     .populaires {
@@ -596,11 +619,11 @@ footer li {
     }
 
     body {
+        width: 100%;
         margin: 0 auto;
         padding: 0 50px;
         max-width: 1024px;
         box-sizing: border-box;
-
     }
 
     .activites-marseille {
@@ -688,7 +711,7 @@ footer li {
     .navbar {
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;
         width: 100%;
   }
 
@@ -774,7 +797,7 @@ footer li {
         max-width: 100%;
         padding: 5px;
         font-size: 12.5px;
-        padding-top: 15px;
+        padding-top: 18px;
     }
 
     .recherche-area button i {
@@ -804,13 +827,14 @@ footer li {
         margin: 0 auto;
         gap: 15px;
         background-color: white;
+        order: 0;
+        padding-bottom: 0;
     }
 
     .hebergements-cards {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: center;
         height: auto;
     }
 
@@ -819,14 +843,14 @@ footer li {
         background-color: #F2F2F2;
         border-radius: 0;
         gap: 15px;
-        padding: 20PX;
+        padding: 20px;
+        order: -1;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        align-items: center;
         height: auto;
     }
 
