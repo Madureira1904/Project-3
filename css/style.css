@@ -185,7 +185,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     height: 79px;
     margin-bottom: 30px;
 
@@ -206,13 +206,13 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    width: 344px;
-    height: 35px;
+    width: 23.9%;
+    height: 62px;
     left: 1096px;
-    gap: 68px;
     padding-right: 50px;
     padding-left: 50px;
     gap: 68px;
+    margin-top: 0px;
 }
 
 .navbar {
@@ -251,7 +251,7 @@ nav ul {
 }
 
 .head-search {
-    width: 1340px;
+    width: 100%;
     height: 281px;
     gap: 35px;
     width: 100%;
@@ -283,9 +283,11 @@ nav ul {
     width: 100%;
     box-sizing: border-box;
     flex-direction: column;
-    height: 560px;
+    height: 530px;
     gap: 30px;
     padding: 30px;
+    padding-left: 60px;
+    padding-right: 80px;
     margin-bottom: 80px;
     margin-top: 50px;
 }
@@ -296,13 +298,13 @@ nav ul {
 
 .marseille-cards {
     display: grid;
-    justify-items: center;
+    justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    width: 1280px;
-    height: 439px;
-    padding-left: 30px;
-    gap: 30px;
+    width: 100%;
+    height: 440px;
+    padding-left: 20px;
+    gap: 35px;
 }
 
 .marseille-cards .card {
@@ -315,26 +317,27 @@ nav ul {
 }
 
 .marseille-cards img {
-    width: 300px;
+    width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .activites-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    position: relative;
+    left: -30px;
+    padding-top: 20px;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    width: 1340px;
-    height: 163px;
+    width: 94%;
+    height: auto;
     background-color: #F2F2F2;
-    padding: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 footer div {
@@ -368,17 +371,17 @@ footer li {
     font-size: 18px;
 }
 
-.recherche-area{
+.recherche-area {
     display: flex;
-    width: 377px;
-    height: 49px;
+    width: 400px;
+    height: 50px;
     border-radius: 15px;
     border-radius: 15px;
     border: 1px solid #F2F2F2;
     box-sizing: border-box;
     overflow: hidden;
     background-color: white; 
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -404,7 +407,7 @@ footer li {
 
 .recherche-area i {
     display: flex; 
-    width: 50px; 
+    width: 55px; 
     height: 100%; 
     border-bottom-left-radius: 15px; 
     border-top-left-radius: 15px; 
@@ -423,6 +426,7 @@ footer li {
     box-sizing: border-box;
     border: none;
     outline: none;
+    width: calc(100% - 100px - 80px);
 }
 
 .recherche-area button {
@@ -627,34 +631,44 @@ footer li {
     }
 
     .activites-marseille {
-        width: 924px;
-        height: 390.2px;
-        gap: 30px;
-
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 0;
     }
 
     .marseille-cards {
         display: grid;
+        justify-content: space-between;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
         width: 100%;
+        box-sizing: border-box;
+        gap: 20px;
+        padding-left: 0;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .marseille-cards .card {
-        width: 193.5px;
+        width: 100%;
         height: 270px;
         border-radius: 20px;
     }
 
     .marseille-cards img {
-        width: 193.5px;
+        width: 100%;
         height: 200px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
     .marseille-cards .card-content {
-        width: 193.5px;
+        width: 100%;
         height: 70px;
         gap: 10px;
         padding-right: 19px;
@@ -665,14 +679,14 @@ footer li {
     }
 
     .main-container {
-        width: 924px;
+        width: 100%;
         gap: 50px;
         height: auto;
     }
 
     footer {
         display: flex;
-        width: 924px;
+        width: 92%;
         height: 163px;
         gap: 15px;
     }
@@ -702,6 +716,7 @@ footer li {
         margin: 0;
         padding: 0;
         width: 100%;
+        max-width: 375px;
     }
 
     html, body {
@@ -744,11 +759,6 @@ footer li {
         width: 100%;
         text-decoration: none;
         transition: all 0.3s;
-    }
-
-    .navbar ul li a:hover {
-        color: #0065FC;
-        border-bottom: 3px solid #0065fc;
     }
 
     .head-search {
@@ -803,6 +813,10 @@ footer li {
     .recherche-area button i {
         background: none;
         color: #0065fc;
+    }
+
+    .recherche-area input {
+        width: 100%;
     }
 
     .info-ligne {
@@ -872,63 +886,69 @@ footer li {
 
     .activites-marseille {
         width: 100%;
+        padding: 20px;
         height: auto;
         margin: 0 auto;
-        padding: 30px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        margin-bottom: 720px;
+        box-sizing: border-box;
     }
 
     .marseille-cards {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
-        padding: 0;  
+        padding: 0;
+        box-sizing: border-box;
     }
 
     .marseille-cards .card {
         width: 100%;
+        height: auto;
         max-width: 315px;
         border-radius: 20px;
+        box-sizing: border-box;
+    }
 
+    .marseille-cards a {
+        width: 100%;
+        max-width: 315px;
+        display: block;
+        box-sizing: border-box;
     }
 
     .marseille-cards img {
-        width: 315px;
-        height: 141px;
+        width: 100%;
+        height: 140px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border: 5px;
+        display: block;
     }
 
     .marseille-cards .card-content {
-        width: 315px;
-        height: 50px;
-        padding-top: 20px;
+        display: flex;
+        width: 100%;
+        padding-top: 5px;
         padding-right: 19px;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
         padding-left: 19px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
         gap: 10px;
+        box-sizing: border-box;
     }
 
     .activites-marseille .section-title {
         text-align: left;
-        width: 100%;
         margin: 0;
         box-sizing: border-box;
-        padding-right: 100px;
-    }
-
-    .activites-marseille h2 {
-        padding-left: 33px;
-        padding: 0px;
+        padding-right: 80px;
     }
 
     section {
