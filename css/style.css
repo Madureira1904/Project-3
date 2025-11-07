@@ -758,7 +758,6 @@ footer li {
         padding: 0;
         margin: 0;
         gap: 20px;
-        padding-right: 15px;
     }
 
     .navbar ul li {
@@ -766,7 +765,7 @@ footer li {
         text-align: center;
         font-family: Raleway;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 100%;
     }
 
@@ -788,6 +787,7 @@ footer li {
         transform: scaleX(0);
         transform-origin: center;
         transition: transform 0.3s ease;
+        color: #0065FC;;
     }
 
     .navbar ul li a:hover::after {
@@ -1021,8 +1021,15 @@ footer li {
     }
 
     .navbar ul li a::before {
-    display: none;
-    content: none;
-  }
+        display: none;
+        content: none;
+    }
 
+    .navbar ul li a :active {
+        color: #0065FC;
+    }
+
+    .navbar ul li a:hover {
+        color: #0065FC;
+    }
 }
