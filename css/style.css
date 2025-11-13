@@ -225,7 +225,7 @@ nav ul {
   text-decoration: none;
   color: inherit;
   display: inline-block;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .navbar ul li a::before {
@@ -475,27 +475,37 @@ footer li {
 
     header {
         width: 100%;
-        max-width: 100%;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
      .navbar {
+        display: flex;
         width: 100%;
         padding: 0;
+        justify-content: space-between;
+        box-sizing: border-box;
     }
 
     nav ul {
-        width: auto;
+        display: flex;
+        justify-content: flex-end;
         gap: 40px;
     }
 
+    .navbar ul li a {
+        padding-top: 15px;
+        justify-items: end;
+    }  
+    
     .head-search {
         width: 100%;
         max-width: 1024px;
         height: auto;
         gap: 35px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
     
     .hebergements-and-populaires {
@@ -503,6 +513,7 @@ footer li {
         gap: 2rem;
         align-items: flex-start;
         flex-wrap: wrap; 
+        box-sizing: border-box;
     }
 
     .hebergements,
@@ -510,6 +521,7 @@ footer li {
         flex: 1 1 100%;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
   }
 
 
@@ -517,10 +529,9 @@ footer li {
         width: 100%;
         background-color: #f2f2f2;
         border-radius: 15px;
-        padding: 30px;
         box-sizing: border-box;
         padding-bottom: 60px;
-        height: 640px
+        height: 680px;
    }
 
     .hebergements-cards {
@@ -529,19 +540,24 @@ footer li {
         gap: 30px;
         width: 100%;
         justify-items: center;
+        align-items: stretch;
+        justify-items: stretch;
+        height: auto;
     }
 
     .hebergements-cards .card {
+        width: 100%;
         background: white;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .hebergements-cards .card-content {
-        width: 230px;
-        height: 64.25px;
+        width: 100%;
+        height: auto;
         gap: 8px;
         padding-right: 15px;
         padding-left: 15px;
@@ -572,23 +588,22 @@ footer li {
     .populaires-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
+        gap: 30px;
         justify-items: center;
         width: 100%;
     }
 
     .populaires-cards .card {
         display: flex;
-        width: 245px;
-        height: 146px;
+        width: 100%;
+        height: auto;
         border-radius: 20px;
     }
 
     .populaires-cards .card-content {
-         width: 183.11px;
-         height: 136px;
+         width: 100%;
+         height: auto;
          top: 5px;
-         left: 91.56px;
          gap: 24px;
          padding-top: 10px;
          padding-right: 5px;
@@ -597,21 +612,18 @@ footer li {
     }
 
     .populaires-cards a {
-        min-width: 250px;
+        width: 100%;
     }
 
     .populaires-cards img {
-        width: 91.56px;
+        width: 35%;
         height: 146px;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         border-top-width: 5px;
         border-bottom-width: 5px;
         border-left-width: 5px;
-    }
-
-    .populaires-cards a {
-        width: auto;
     }
 
     .populaires-cards .card-title {
@@ -624,10 +636,10 @@ footer li {
 
     body {
         width: 100%;
-        margin: 0 auto;
-        padding: 0 50px;
+        margin: auto;
         max-width: 1024px;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .activites-marseille {
@@ -636,8 +648,6 @@ footer li {
         box-sizing: border-box;
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 60px;
-        padding-right: 60px;
         gap: 0;
     }
 
@@ -656,7 +666,7 @@ footer li {
 
     .marseille-cards .card {
         width: 100%;
-        height: 270px;
+        height: 100%;
         border-radius: 20px;
     }
 
@@ -668,27 +678,31 @@ footer li {
     }
 
     .marseille-cards .card-content {
-        width: 100%;
-        height: 70px;
+        display: flex;
+        height: 60px;
         gap: 10px;
-        padding-right: 19px;
-        padding-bottom: 20px;
-        padding-left: 19px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+        align-items: center;
+        justify-items: start;
+        text-align: start;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .main-container {
         width: 100%;
         gap: 50px;
         height: auto;
+        box-sizing: border-box;
     }
 
     footer {
         display: flex;
         width: 92%;
-        height: 163px;
+        height: auto;
         gap: 15px;
+        box-sizing: border-box;
     }
 
     footer div {
@@ -713,10 +727,10 @@ footer li {
 @media (max-width: 767.98px) {
     
     body {
-        margin: 0;
+        margin: auto;
         padding: 0;
         width: 100%;
-        max-width: 375px;
+        max-width: 700px;
     }
 
     html, body {
@@ -728,7 +742,7 @@ footer li {
         flex-direction: column;
         align-items: center;
         width: 100%;
-  }
+    }
 
     header {
         width: 100%;
@@ -864,7 +878,6 @@ footer li {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        width: 100%;
         margin-top: 45px;
     }
 
@@ -876,9 +889,11 @@ footer li {
         background-color: white;
         order: 0;
         padding-bottom: 0;
+        padding-left: 35px;
     }
 
     .hebergements-cards {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -892,9 +907,11 @@ footer li {
         gap: 15px;
         padding: 20px;
         order: -1;
+        padding-left: 35px;
     }
 
     .populaires-cards {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -967,6 +984,7 @@ footer li {
     .marseille-cards .card-content {
         display: flex;
         width: 100%;
+        height: 15%;
         padding-top: 5px;
         padding-right: 19px;
         padding-bottom: 5px;
