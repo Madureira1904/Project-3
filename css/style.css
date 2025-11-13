@@ -501,11 +501,27 @@ footer li {
     
     .head-search {
         width: 100%;
-        max-width: 1024px;
         height: auto;
         gap: 35px;
-        margin: 0 auto;
         box-sizing: border-box;
+    }
+
+    .filtres-grid {
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .filtres-container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        justify-content: space-evenly;
     }
     
     .hebergements-and-populaires {
@@ -864,10 +880,6 @@ footer li {
 
     .recherche-area input {
         width: 65%;
-    }
-
-    .info-ligne {
-        padding-top: 120px;
     }
 
     .hebergements-and-populaires {
