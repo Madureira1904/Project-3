@@ -18,7 +18,7 @@
     max-width: 1440px;
     padding: 40px;
     box-sizing: border-box;
-    height: 614px;
+    height: auto;
 }
 
 body {
@@ -157,7 +157,7 @@ p {
 
 .hebergements-cards .card-content {
     width: 100%;
-    height: 64.25px;
+    height: auto;
     padding-left: 15px;
     padding-right: 15px;
     border: 20px;
@@ -193,8 +193,8 @@ nav {
 
 .logo {
     display: flex;
-    width: 161.09px;
-    height: 79px;
+    width: 61.09px;
+    height: 19px;
     opacity: 1;
     gap: 10px;
     padding-top: 30px;
@@ -245,20 +245,13 @@ nav ul {
   transform: scaleX(1);
 }
 
-.logo {
-    width: 61.09px;
-    height: 19px;
-}
-
 .head-search {
     width: 100%;
     height: 281px;
     gap: 35px;
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    width: 1440;
 }
 
 .head-search h1 {
@@ -376,7 +369,6 @@ footer li {
     width: 400px;
     height: 50px;
     border-radius: 15px;
-    border-radius: 15px;
     border: 1px solid #F2F2F2;
     box-sizing: border-box;
     overflow: hidden;
@@ -421,7 +413,6 @@ footer li {
     font-weight: 700;
     font-size: 18px;
     padding: 0;
-    letter-spacing: 0%;
     text-align: center;
     box-sizing: border-box;
     border: none;
@@ -445,7 +436,6 @@ footer li {
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-align: center;
     color: white;
     box-sizing: border-box;
@@ -460,6 +450,21 @@ footer li {
 
 .info-ligne p {
   margin: 0;
+}
+
+.icon-de-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #c6bfbf;
+    border-width: 2px;
+}
+
+.icon-de-info i {
+    font-size: 12px;
 }
 
 .search-btn i {
@@ -515,14 +520,15 @@ footer li {
     }
 
     .filtres-container {
-        display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         width: 90%;
         height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
         justify-content: space-evenly;
     }
+
     
     .hebergements-and-populaires {
         display: flex; 
@@ -555,14 +561,14 @@ footer li {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         width: 100%;
-        justify-items: center;
         align-items: stretch;
         justify-items: stretch;
-        height: auto;
+        height: 100%;
     }
 
     .hebergements-cards .card {
         width: 100%;
+        height: auto;
         background: white;
         border-radius: 20px;
         overflow: hidden;
@@ -573,7 +579,7 @@ footer li {
 
     .hebergements-cards .card-content {
         width: 100%;
-        height: auto;
+        height: fit-content;
         gap: 8px;
         padding-right: 15px;
         padding-left: 15px;
@@ -746,7 +752,6 @@ footer li {
         margin: auto;
         padding: 0;
         width: 100%;
-        max-width: 700px;
     }
 
     html, body {
