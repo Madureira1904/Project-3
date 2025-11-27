@@ -964,6 +964,7 @@ footer li {
     }
 
     .populaires-cards .card {
+        display: flex;
         width: 100%;
         border-radius: 20px;
         box-sizing: border-box;
@@ -1004,10 +1005,16 @@ footer li {
     }
 
     .populaires-cards .card img {
-        width: 40%;
+        width: 30%;
         height: 140px;
         display: block;
         object-fit: cover;
+    }
+
+     .populaires-cards .card-content {
+        display: flex;
+        width: 70%;
+        box-sizing: border-box;
     }
 
     .hebergements .card-content {
@@ -1182,4 +1189,7 @@ footer li {
         box-sizing: border-box;
     }
 
+    form.recherche-area .search-btn i {
+        color: #ffffff;
+    }
 }
